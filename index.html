@@ -30,6 +30,7 @@
             justify-content: center;
             gap: 1rem;
             margin: 1rem 0 0;
+            flex-wrap: wrap;
         }
         nav ul li {
             margin: 0;
@@ -51,7 +52,8 @@
             background-color: #fff;
             border-radius: 12px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
+            max-width: 90%;
+            width: 100%;
         }
         section h2 {
             color: #B8860B;
@@ -59,6 +61,20 @@
         }
         section ul {
             padding-left: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            section {
+                max-width: 800px;
+            }
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin-bottom: 0.5rem;
+            }
         }
     </style>
 </head>
@@ -93,13 +109,12 @@
         <h2>Meet the Team</h2>
         <p>Our team consists of passionate individuals dedicated to making library management easier for everyone.</p>
         <ul>
-            <li>Joudy</li>
-            <li>Alia</li>
-            <li>Hams</li>
-            <li>Youssef</li>
-            <li>Ahmed</li>
-            <li>Omar</li>
-            <li>Seif</li>
+            <li>Ahmed Hassan</li>
+            <li>Youssif</li>
+            <li>James Doe</li>
+            <li>Jane Doe</li>
+            <li>John Doe</li>
+            <li>Emily Doe</li>
         </ul>
     </section>
 
